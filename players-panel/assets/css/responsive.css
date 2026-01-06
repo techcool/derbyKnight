@@ -1,0 +1,521 @@
+@media (max-width: 1800px) {
+  .form-group .input-fields,
+  .form-group .input-fields .row .input-col .input label {
+    flex-direction: row;
+  }
+  .form-group .input-fields .row,
+  .form-group .input-fields .row .input-col {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-group .input-fields .row {
+    justify-content: flex-start;
+  }
+  .commission-row input {
+    height: 28px;
+  }
+  .form-group .input-fields .row.commission-row .heading-col {
+    text-align: center;
+  }
+  .form-group .input-fields .row.commission-row {
+    align-items: center;
+  }
+}
+
+@media (max-width: 1690px) {
+  .active-race .table-col {
+    gap: 80px;
+  }
+  .active-race .table-col .left-table {
+    max-width: 54%;
+  }
+  .active-race .table-col .right-table {
+    max-width: 40%;
+  }
+  .wallet {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .info-table {
+    width: 75%;
+  }
+}
+@media (max-width: 1366px) {
+  .odds-group .rows .row .horse-name {
+    flex: 0 0 182px;
+  }
+  .admin-dashboard.sportsbook-form .form-wrapper,
+  .ongoing-races.edit-race .form-wrapper {
+    width: 90%;
+  }
+  .odds-group .odds-col-left h6,
+  .odds-group .odds-col-right h6 {
+    font-size: 16px;
+    font-weight: var(--fontWeightRegular);
+  }
+  .active-race .table-col {
+    flex-wrap: wrap;
+  }
+  .active-race .table-col .left-table {
+    max-width: 100%;
+  }
+  .active-race .table-col .right-table {
+    max-width: 100%;
+  }
+  .active-race .table-col {
+    gap: 50px;
+  }
+  .pools p.large-paragraph-font-size {
+    text-align: left;
+  }
+  .otp-wrapper {
+    max-width: 100%;
+  }
+  .view-bets .stacks .order {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1280px) {
+  .dashboard-cards .card h2 {
+    font-size: 22px;
+  }
+  .data-heading {
+    font-size: 48px;
+  }
+  .dashboard-cards {
+    gap: var(--gap-40);
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
+  .info-table {
+    width: 100%;
+  }
+  .form-wrapper {
+    width: 70%;
+  }
+  .form-group .input-fields .row .heading-col h6 {
+    font-size: 15px;
+  }
+  /* .admin-dashboard.sportsbook-form .form-wrapper{
+    width: 80%;
+} */
+  .form-group .input-fields .row .input-col .input label {
+    font-size: 15px;
+  }
+  .form-group .input-fields {
+    gap: 15px;
+  }
+  .input-fields .row:first-child .input-col {
+    gap: 32px;
+  }
+  .details-info {
+    max-width: 80%;
+  }
+  .edit-popup {
+    top: 25%;
+    transform: unset;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --gap-120: 90px;
+    --gap-100: 80px;
+    --gap-80: 60px;
+    --gap-60: 40px;
+    --gap-40: 25px;
+    --h1-font-size: 40px;
+    --h2-font-size: 30px;
+    --h3-font-size: 25px;
+    --h4-font-size: 20px;
+    --h5-font-size: 18px;
+    --h6-font-size: 17px;
+    --large-paragraph-font-size: 18px;
+  }
+  .heading-inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .admin-left nav ul li a {
+    font-size: 17px;
+  }
+  .custom-header {
+    height: 80px;
+    padding: 12px 20px;
+  }
+  .heading-inner {
+    position: relative;
+    align-items: center;
+  }
+
+  .menu-btn {
+    display: inline-flex;
+    background: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    cursor: pointer;
+    flex-direction: column;
+  }
+
+  /* hide the aside off-screen and slide in when `.open` added */
+  .admin-left {
+    left: -320px;
+    top: 80px;
+    height: calc(100% - 80px);
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+  }
+  footer {
+    width: 100%;
+    margin-left: 0;
+  }
+  section.admin-dashboard {
+    width: 100%;
+    margin-left: 0;
+    padding: 25px;
+    padding-bottom: var(--gap-100);
+    min-height: 100vh;
+  }
+  .admin-left.open {
+    left: 0;
+  }
+
+  .menu-hamburger-btn {
+    display: block;
+  }
+  .nav a {
+    padding: 5px;
+    background: transparent;
+    box-shadow: unset;
+    color: var(--white);
+    border: none;
+    font-size: 16px;
+  }
+  .logo {
+    grid-column: 2 / 3;
+    justify-self: center;
+  }
+  .logo img {
+    height: 40px;
+  }
+  /* show icons instead of text in header nav on small screens */
+  .nav .nav-text {
+    display: none;
+  }
+  .nav .nav-icon {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+
+    color: var(--white);
+    flex: 0 0 40px;
+  }
+  .nav ul {
+    justify-content: flex-end;
+  }
+  .nav a {
+    padding: 0 5px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    width: 30px;
+  }
+  .dashboard-cards .medium-large {
+    font-size: 22px;
+  }
+  .data-heading {
+    font-size: 42px;
+  }
+  footer {
+    position: relative;
+  }
+  .race-name-wrapper {
+    margin-top: 35px;
+  }
+  .active-race .table-col {
+    gap: 35px;
+  }
+}
+@media (max-width: 767px) {
+  :root {
+    --gap-120: 75px;
+    --gap-100: 60px;
+    --gap-80: 50px;
+    --gap-60: 35px;
+    --h1-font-size: 35px;
+    --h2-font-size: 25px;
+    --h3-font-size: 22px;
+    --h4-font-size: 18px;
+    --h5-font-size: 17px;
+    --h6-font-size: 16px;
+  }
+
+  .admin-left {
+    width: 255px;
+  }
+  .dashboard-cards .medium-large {
+    font-size: 18px;
+  }
+  .data-heading {
+    font-size: 32px;
+  }
+  .dashboard-cards {
+    grid-template-columns: repeat(1, minmax(220px, 1fr));
+  }
+
+  .dashboard-cards .card h2 {
+    font-size: 22px;
+  }
+  .dashboard-cards .card {
+    min-height: 170px;
+  }
+  footer p {
+    font-size: 16px;
+  }
+  .info-table table tr td h6 {
+    font-size: 16px;
+  }
+  .info-table table tr td {
+    font-size: 18px;
+  }
+  .info-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: hidden;
+  }
+  .form-wrapper,
+  .ongoing-races.edit-race .form-wrapper {
+    width: 100%;
+  }
+  .add_horse_popup span {
+    display: none;
+  }
+  .admin-dashboard.sportsbook-form .form-wrapper,
+  .ongoing-races.edit-race .form-wrapper {
+    width: 100%;
+  }
+  .form-group .input-fields .row .heading-col {
+    min-width: unset;
+  }
+  .odds-group .rows .row .horse-title {
+    display: none;
+  }
+  .odds-group {
+    gap: 25px;
+  }
+  .form-group .input-fields .row .input-col .input label .text {
+    text-align: left;
+  }
+  .input-fields .row:first-child .input-col {
+    gap: 25px;
+  }
+  .form-group .input-fields .row .heading-col h6 {
+    font-weight: var(--fontWeightRegular);
+  }
+  .input-fields .row:first-child .input-col {
+    align-items: flex-start;
+  }
+  .input-fields .row:first-child .input-col {
+    gap: 32px;
+  }
+  .result-boxes .result-box {
+    gap: 15px;
+  }
+  .table table thead th,
+  .table table tbody tr td:nth-child(1) {
+    font-size: 18px;
+  }
+  .table table {
+    font-size: 16px;
+  }
+  .table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: hidden;
+    width: 100%;
+  }
+  span.date,
+  span.time {
+    white-space: nowrap;
+  }
+  .details-info {
+    max-width: 100%;
+  }
+  .details-info table {
+    min-width: 400px;
+  }
+  .sign-up-form-wrapper {
+    padding: 50px 50px;
+  }
+  .sign-up-form .form-group.two-column input,
+  .sign-up-form .form-group {
+    margin-bottom: 35px;
+  }
+  .players-login-hero {
+    height: 235px;
+  }
+  .players-login-hero img.logo {
+    max-width: 210px;
+  }
+  .active-race .table-col .right-table {
+    max-width: 100%;
+  }
+  .view-bets .stacks {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .view-bets .stacks .stack {
+    width: 50%;
+  }
+  .edit-btn {
+    margin-left: 0;
+    margin-top: var(--gap-25);
+  }
+  .view-bets .stacks .stack {
+    align-items: flex-start;
+  }
+  .edit-popup .popup {
+    padding: 25px;
+  }
+  .input-col.multiple {
+    flex-wrap: wrap;
+  }
+
+  .add-balance {
+    flex-wrap: wrap;
+  }
+  .add-balance form {
+    width: 100%;
+  }
+  .add-balance h4 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .current-balance p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .races .race {
+    padding: 0;
+    grid-template-columns: 1fr auto;
+  }
+  .multiple-inputs {
+    flex-wrap: wrap;
+  }
+  .races .race p {
+    display: none;
+  }
+  .input-wrapper .text {
+    display: none;
+  }
+  .admin-dashboard .popup {
+    padding: 25px;
+  }
+  .form-group .input-fields .row .input-col .input label {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-group .input-fields .row .input-col .input label .text {
+    text-align: left;
+  }
+  .commission-row input {
+    width: 55px !important;
+  }
+  .form-group .input-fields .row .heading-col h6 {
+    font-size: 13px;
+  }
+  .form-group .input-fields .row.commission-row .input-col {
+    gap: 56px;
+  }
+  .odds-group .rows .row .horse-name {
+    flex: 0 0 148px;
+  }
+  .odds-group .rows .row .horse-name,
+  .odds-group input {
+    font-size: 15px;
+  }
+  .check-boxes .check-box label .text {
+    font-size: 14px;
+  }
+  .result-boxes .result-box label {
+    min-width: 115px;
+  }
+  .button-wrapper {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .button-wrapper a {
+    width: 100%;
+  }
+  .sign-up-form-wrapper {
+    padding: 35px;
+  }
+  .heading-wrapper h1::after {
+    display: none;
+  }
+  .submit-btn-wrapper .cta svg {
+    display: none;
+  }
+  .submit-btn-wrapper .cta {
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .submit-btn-wrapper .cta span {
+    text-align: center !important;
+    font-size: 16px !important;
+  }
+  .input-col.multiple {
+    flex-wrap: wrap;
+  }
+  .input-col .col label {
+    font-size: 15px;
+  }
+  .input-col .col,
+  .active-race .popup-actions button {
+    width: 100%;
+  }
+  .input-col .col,
+  .active-race .popup-actions {
+    flex-wrap: wrap;
+  }
+  .expire-otp {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .view-bets .stacks .stack {
+    width: 100%;
+  }
+  .result .pools {
+    column-count: 1;
+  }
+  .add-balance form {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 390px) {
+  .form-group .input-fields .row.commission-row .input-col {
+    gap: 63px;
+  }
+  .odds-group .rows .row .horse-name {
+    flex: 0 0 130px;
+  }
+  .odds-group .odds-col-left h6 {
+    max-width: 90px;
+  }
+  .result-boxes .result-box {
+    flex-wrap: wrap;
+  }
+  .result-boxes .result-box label {
+    font-weight: var(--fontWeightSemiBold);
+  }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DerbyKight — Landing</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a class="logo" href="index.html"
+          ><img src="assets/images/logo.png" alt="Site logo"
+        /></a>
+        <nav class="nav" id="mainNav">
+          <ul>
+            <!-- <li><a href="about.html">About Us</a></li> -->
+            <li><a href="how-it-works.html">How it works</a></li>
+            <li><a href="vendor-signup.html">Sign up!</a></li>
+            <li><a href="vendor-login.html">Vendor Login!</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Off-canvas menu -->
+    <aside class="offcanvas-menu" id="offcanvasMenu" aria-hidden="true">
+      <div class="offcanvas-inner">
+        <button
+          class="offcanvas-close"
+          id="offcanvasClose"
+          aria-label="Close menu"
+        >
+          ×
+        </button>
+        <nav class="offcanvas-nav">
+          <ul>
+            <!-- <li><a href="about.html">About Us</a></li> -->
+            <li><a href="how-it-works.html">How it works</a></li>
+            <li><a href="vendor-signup.html">Sign up!</a></li>
+            <li><a href="vendor-login.html">Vendor Login!</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="offcanvas-backdrop" id="offcanvasBackdrop"></div>
+    </aside>
+
+    <main>
+      <section
+        class="inner-hero"
+        style="
+          background-image: url('assets/images/how-it-works-hero-pic.jpg');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="inner-hero-overlay"></div>
+        <div class="container">
+          <h1 class="hero-title"><span>How It Works</span></h1>
+        </div>
+      </section>
+      <section class="how-it-works-steps py-xl">
+        <div class="container">
+          <div class="steps-content">
+            <div class="step">
+              <div class="heading">
+                <img src="assets/images/step1-icon.png" alt="Step 1 Icon" />
+                <h4 class="step-title">Step One</h4>
+              </div>
+              <p class="step-description">
+                You simply order the #of races you'll need for your event. You
+                can order anywhere from just ONE race and up to SIX races with
+                anywhere from 4 to 18 horses in a race!
+              </p>
+            </div>
+            <div class="step">
+              <div class="heading">
+                <img src="assets/images/step2-icon.png" alt="Step 2 Icon" />
+                <h4 class="step-title">Step Two</h4>
+              </div>
+              <p class="step-description">
+                You'll submit a form to complete with the name of the race & the
+                horse's names, too! Your videos will be delivered online to use
+                and via Dropbox.
+              </p>
+            </div>
+            <div class="step">
+              <div class="heading">
+                <img src="assets/images/step3-icon.png" alt="Step 3 Icon" />
+                <h4 class="step-title">Step Three</h4>
+              </div>
+              <p class="step-description">
+                After that, you log in here to create a 'Virtual Sportsbook' for
+                your guests. You'll enter the race & horse names, decide what
+                bets are available to the players, fill in the opening odds and
+                choose if you want 'fixed' odds for your race or live odds. You
+                also get to decide the player's starting bankroll for your derby
+                night, too!
+              </p>
+            </div>
+            <div class="step">
+              <div class="heading">
+                <img src="assets/images/step4-icon.png" alt="Step 4 Icon" />
+                <h4 class="step-title">Step Four</h4>
+              </div>
+              <p class="step-description">
+                The player get a QR code where they can log in and place their
+                wagers on all the races. When a race is over, you update the
+                race with the top 3 finishers and Derby Knight will then
+                calculate everyone's balance and a leaderboard to see how
+                everyone has fared!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-horse">
+          <img src="assets/images/footer-horse.png" alt="Footer Horse" />
+        </div>
+        <div class="footer-menu">
+          <div class="footer-logo">
+            <a href="index.html">
+              <img src="assets/images/logo.png" alt="Footer Logo"
+            /></a>
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="about.html">ABOUT</a></li> -->
+            <li><a href="how-it-works.html">HOW IT WORKS</a></li>
+            <li><a href="vendor-signup.html">SIGN UP</a></li>
+            <li><a href="vendor-login.html">VENDOR LOGIN</a></li>
+          </ul>
+        </div>
+        <p class="copyright">© 2025 DerbyKight</p>
+      </div>
+    </footer>
+  </body>
+  <script src="assets/js/script.js"></script>
+</html>

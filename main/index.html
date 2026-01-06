@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DerbyKight — Landing</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a class="logo" href="index.html"
+          ><img src="assets/images/logo.png" alt="Site logo"
+        /></a>
+        <nav class="nav" id="mainNav">
+          <ul>
+            <!-- <li><a href="about.html">About Us</a></li> -->
+            <li><a href="how-it-works.html">How it works</a></li>
+            <li><a href="vendor-signup.html">Sign up!</a></li>
+            <li><a href="vendor-login.html">Vendor Login!</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Off-canvas menu -->
+    <aside class="offcanvas-menu" id="offcanvasMenu" aria-hidden="true">
+      <div class="offcanvas-inner">
+        <button
+          class="offcanvas-close"
+          id="offcanvasClose"
+          aria-label="Close menu"
+        >
+          ×
+        </button>
+        <nav class="offcanvas-nav">
+          <ul>
+            <!-- <li><a href="about.html">About Us</a></li> -->
+            <li><a href="how-it-works.html">How it works</a></li>
+            <li><a href="vendor-signup.html">Sign up!</a></li>
+            <li><a href="vendor-login.html">Vendor Login!</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="offcanvas-backdrop" id="offcanvasBackdrop"></div>
+    </aside>
+
+    <main>
+      <section
+        class="hero"
+        style="
+          background-image: url('assets/images/hero-bg.jpg');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <p>
+              Derby Knight is the next evolution in casino-themed entertainment.
+              Built exclusively for casino party companies, our virtual horse
+              racing system makes it painless and profitable to bring the thrill
+              of the track to any event.
+            </p>
+
+            <p>
+              With Derby Knight, you can customize each race, from the race
+              titles to the horse names, creating a personalized experience your
+              clients will love. Even better, guests place their wagers directly
+              from their phones, eliminating the need for extra staff, betting
+              tickets, or complicated setups.
+            </p>
+            <div class="hero-ctas"></div>
+          </div>
+          <div class="hero-video-wrapper">
+            <video id="raceVideo" controls>
+              <source src="assets/videos/race-example.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="video-poster" id="videoPoster">
+              <img src="assets/images/video-poster.jpg" alt="Video poster" />
+              <button
+                class="play-button"
+                aria-label="Play video"
+                onclick="playVideo()"
+              >
+                <svg
+                  width="94"
+                  height="94"
+                  viewBox="0 0 94 94"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M47.0001 82.25C51.6292 82.25 56.2129 81.3382 60.4897 79.5667C64.7664 77.7953 68.6523 75.1988 71.9256 71.9255C75.1989 68.6522 77.7954 64.7663 79.5668 60.4896C81.3383 56.2129 82.2501 51.6291 82.2501 47C82.2501 42.3709 81.3383 37.7871 79.5668 33.5104C77.7954 29.2337 75.1989 25.3477 71.9256 22.0745C68.6523 18.8012 64.7664 16.2047 60.4897 14.4332C56.2129 12.6618 51.6292 11.75 47.0001 11.75C37.6512 11.75 28.6852 15.4638 22.0746 22.0745C15.4639 28.6851 11.7501 37.6511 11.7501 47C11.7501 56.3489 15.4639 65.3148 22.0746 71.9255C28.6852 78.5362 37.6512 82.25 47.0001 82.25ZM47.0001 90.0833C70.7938 90.0833 90.0834 70.7937 90.0834 47C90.0834 23.2062 70.7938 3.91666 47.0001 3.91666C23.2063 3.91666 3.91675 23.2062 3.91675 47C3.91675 70.7937 23.2063 90.0833 47.0001 90.0833Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M62.6667 47L39.1667 63.9592V30.0408L62.6667 47Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feature">
+        <div class="container feature-inner">
+          <div class="card">
+            <div class="feature-card feature-card--gold">
+              <div
+                class="feature-card feature-card--white feature-card--rounded"
+              >
+                <h3 class="feature-title">100% Legal</h3>
+                <p class="feature-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  malesuada porta magna, sed maximus diam pharetra non.
+                </p>
+                <div class="svg-wrapper" data-svg-wrapper>
+                  <svg
+                    width="59"
+                    height="59"
+                    viewBox="0 0 59 59"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.5834 28.583L12.4761 42.829C12.0925 43.2811 11.6192 43.6486 11.0862 43.9083C10.5532 44.168 9.97204 44.3143 9.3796 44.3379C8.78715 44.3614 8.19626 44.2618 7.6443 44.0452C7.09235 43.8287 6.59134 43.4999 6.17298 43.0798C5.75295 42.6598 5.42445 42.1574 5.20817 41.6041C4.99188 41.0509 4.89251 40.4589 4.91629 39.8654C4.94008 39.2719 5.08652 38.6897 5.34638 38.1556C5.60624 37.6215 5.9739 37.1469 6.42619 36.7619L20.6378 24.63"
+                      stroke="#B2B2B2"
+                      stroke-opacity="0.4"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M44.2501 24.748L32.0764 36.9487M24.4654 4.91907L12.2917 17.1222M49.1668 28.6617L54.0834 24.63M49.1668 36.725L54.0834 39.4119M27.0467 54.0808H51.6251M30.0581 54.0808C31.4127 51.652 32.4255 47.0082 37.2242 46.7476C38.65 46.6689 40.1004 46.6689 41.5263 46.7476C46.3225 47.0082 47.3402 51.652 48.6972 54.0808M22.9437 6.44569L13.8159 15.5956C13.8159 15.5956 18.381 21.6972 22.9462 26.2722C27.5137 30.8471 33.6006 35.4245 33.6006 35.4245L42.7308 26.2722C42.7308 26.2722 38.1657 20.173 33.6006 15.5956C29.0355 11.0231 22.9437 6.44569 22.9437 6.44569Z"
+                      stroke="#B2B2B2"
+                      stroke-opacity="0.4"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="feature-card feature-card--gold">
+              <div
+                class="feature-card feature-card--white feature-card--rounded"
+              >
+                <h3 class="feature-title">Hastle Free</h3>
+                <p class="feature-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  malesuada porta magna, sed maximus diam pharetra non.
+                </p>
+                <div class="svg-wrapper" data-svg-wrapper>
+                  <svg
+                    width="49"
+                    height="49"
+                    viewBox="0 0 49 49"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.08325 25.5208C4.08325 24.4378 4.51346 23.3992 5.27923 22.6335C6.04501 21.8677 7.08362 21.4375 8.16659 21.4375C9.79104 21.4375 11.349 22.0828 12.4976 23.2314C13.6463 24.3801 14.2916 25.938 14.2916 27.5625V35.7291C14.2916 37.3536 13.6463 38.9115 12.4976 40.0602C11.349 41.2088 9.79104 41.8541 8.16659 41.8541C7.08362 41.8541 6.04501 41.4239 5.27923 40.6582C4.51346 39.8924 4.08325 38.8538 4.08325 37.7708V25.5208ZM31.6029 15.9372L31.0578 17.6931C30.6127 19.1324 30.3901 19.8511 30.5616 20.4207C30.706 20.8829 31.0099 21.2787 31.4191 21.5375C31.9316 21.8601 32.7054 21.8601 34.257 21.8601H35.0819C40.329 21.8601 42.9525 21.8601 44.1918 23.4118C44.3334 23.5901 44.4593 23.7786 44.5695 23.9773C45.523 25.7086 44.4388 28.0423 42.2706 32.7095C40.282 36.9929 39.2857 39.1346 37.44 40.3943C37.2603 40.5168 37.0766 40.6325 36.8888 40.7414C34.9451 41.8541 32.5359 41.8541 27.7176 41.8541H26.6743C20.8351 41.8541 17.9176 41.8541 16.1046 40.0983C14.2916 38.3404 14.2916 35.5127 14.2916 29.8573V27.8687C14.2916 24.8981 14.2916 23.4118 14.8183 22.05C15.3471 20.6902 16.3557 19.5734 18.377 17.3358L26.7294 8.08701C26.9397 7.85426 27.0438 7.73993 27.1378 7.65826C27.5554 7.29823 28.0974 7.11607 28.6477 7.1508C29.198 7.18552 29.7128 7.43438 30.0818 7.84405C30.1635 7.93593 30.2513 8.06455 30.4289 8.3218C30.7045 8.72197 30.8413 8.92205 30.9618 9.12214C32.0398 10.9004 32.3644 13.0136 31.8724 15.0226C31.8173 15.2451 31.7458 15.4758 31.6029 15.9372Z"
+                      stroke="#B2B2B2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="feature-card feature-card--gold">
+              <div
+                class="feature-card feature-card--white feature-card--rounded"
+              >
+                <h3 class="feature-title">Profitable</h3>
+                <p class="feature-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  malesuada porta magna, sed maximus diam pharetra non.
+                </p>
+              </div>
+              <div class="svg-wrapper" data-svg-wrapper>
+                <svg
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_62_53)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M25.4723 8.92022C25.3381 8.49856 25.1465 8.11522 25.0123 7.69356C24.8539 7.1747 24.7448 6.64207 24.6865 6.10272C24.6944 6.02916 24.6871 5.95474 24.6649 5.88415C24.6428 5.81355 24.6062 5.74831 24.5576 5.69251C24.509 5.63671 24.4494 5.59157 24.3825 5.55991C24.3156 5.52825 24.2429 5.51077 24.169 5.50856C24.0247 5.50324 23.884 5.55428 23.7767 5.65086C23.6694 5.74745 23.6038 5.88201 23.594 6.02606C23.2997 7.28689 23.2997 8.59855 23.594 9.85939C23.769 10.5686 24.0182 11.2515 24.3415 11.9083C24.5715 12.4066 24.7631 12.4066 25.0315 12.7325C25.2998 13.0583 26.354 13.0966 26.4115 12.445C26.1623 11.3908 26.2198 11.2758 25.894 10.2216C25.779 9.72331 25.6256 9.32272 25.4723 8.92022ZM32.771 5.77881C32.6474 5.703 32.4997 5.67668 32.3576 5.70512C32.2154 5.73355 32.0892 5.81464 32.0043 5.93214C31.1931 6.84958 30.5448 7.89909 30.0876 9.03522C29.8449 9.65878 29.6468 10.2977 29.4935 10.9519C29.2789 11.5084 29.1622 12.0978 29.1485 12.6941C29.1485 13.4991 29.896 13.5375 30.6243 13.0391C31.0076 12.491 31.3105 11.8891 31.5251 11.2566C31.7628 10.6305 31.9609 9.99164 32.1193 9.33997C32.3034 8.37726 32.5794 7.43442 32.9435 6.52439C33.0118 6.40041 33.0319 6.25559 33.0001 6.11767C32.9683 5.97974 32.8867 5.85841 32.771 5.77689"
+                      fill="#B2B2B2"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M21.8692 11.6208C20.5227 10.8511 19.2862 9.90344 18.193 8.80328C17.6902 8.25904 17.302 7.61912 17.0518 6.92169C16.8015 6.22425 16.6942 5.48357 16.7363 4.74378C16.7363 4.18028 16.8002 3.62445 16.928 3.07628C17.0238 2.69295 17.1197 2.29045 17.4263 2.11795C17.5859 2.03401 17.7635 1.99015 17.9438 1.99015C18.1241 1.99015 18.3017 2.03401 18.4613 2.11795C19.2024 2.47189 19.8918 2.90634 20.5294 3.42128C21.1319 3.90702 21.8415 4.24211 22.5994 4.39878C23.109 4.47056 23.628 4.36932 24.0733 4.11128C24.6713 3.73753 25.2137 3.27945 25.6833 2.75045C25.9517 2.48212 26.2008 2.15628 26.5458 2.11795C27.0499 2.06428 27.5597 2.1237 28.0389 2.29045C29.463 3.07437 30.9906 3.64937 32.5795 3.99628C33.0203 4.01801 33.4548 3.97328 33.8828 3.86212C35.1095 3.53628 36.1426 2.53962 37.4651 2.40545C37.7327 2.3772 38.0025 2.3772 38.2701 2.40545C38.5077 2.41823 38.7377 2.46934 38.9601 2.55878C39.7267 2.84628 40.1657 3.09545 40.2807 3.47878C40.2992 3.6363 40.2849 3.79594 40.2387 3.94767C40.1925 4.0994 40.1154 4.23994 40.0123 4.36045C39.0157 5.91295 36.524 7.56128 35.7017 8.72853C34.9581 9.87853 34.2809 11.0662 33.6701 12.2916C33.1909 13.1541 34.5134 13.135 34.9542 12.2916C35.7976 11.2183 36.0467 10.5666 36.8709 9.47412C37.8635 8.48124 38.9192 7.55356 40.0315 6.69687C40.9132 5.98195 41.5782 5.0332 41.9482 3.95795C42.1973 2.84628 41.7565 1.65795 39.6482 0.73795C39.2632 0.572504 38.8566 0.462789 38.4407 0.412117C38.0515 0.382357 37.6606 0.382357 37.2715 0.412117C36.0465 0.693035 34.8671 1.14467 33.7678 1.75378C33.433 1.88681 33.0734 1.94567 32.7137 1.92628C31.1037 1.81128 30.0687 0.776284 28.7462 0.316284C27.9612 0.0395223 27.1241 -0.0574185 26.2967 0.0326169C25.7949 0.102684 25.3197 0.300702 24.9167 0.607617C24.4375 0.971784 23.9794 1.48928 23.5002 1.93012C23.0211 2.37095 23.0594 2.42845 22.7527 2.39012C22.3335 2.27096 21.9425 2.06892 21.6027 1.79595C20.8491 1.22079 20.0333 0.732167 19.1705 0.339284C18.7389 0.157628 18.2701 0.0819757 17.8032 0.118656C17.3364 0.155336 16.8851 0.303282 16.4872 0.550117C15.9899 0.885753 15.6194 1.37837 15.4349 1.94928C15.1474 2.86545 15.019 3.82378 15.0516 4.78403C15.0498 5.71003 15.2318 6.62717 15.5871 7.48228C15.9425 8.33739 16.464 9.11345 17.1216 9.76545C18.4633 10.9417 19.9913 11.8867 21.643 12.5619C22.3138 12.8302 22.678 12.1785 21.873 11.6227"
+                      fill="#B2B2B2"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.8466 14.7238C23.8529 15.0549 24.8766 15.33 25.9133 15.548C26.547 15.6579 27.1853 15.7282 27.828 15.7588C28.4669 15.8061 29.1058 15.8061 29.7447 15.7588C30.6072 15.7588 35.5867 14.8197 35.2225 13.8422C35.2171 13.7567 35.1927 13.6736 35.151 13.5988C35.1094 13.524 35.0515 13.4594 34.9817 13.4098C34.9119 13.3602 34.8319 13.3268 34.7476 13.3121C34.6632 13.2974 34.5767 13.3017 34.4942 13.3247C31.1822 13.9572 27.7839 13.9955 24.4566 13.4397C23.5174 13.2608 22.5719 13.133 21.6199 13.0563C19.6817 12.4882 17.6159 12.5284 15.7013 13.1713C14.427 13.6342 13.2267 14.2799 12.1382 15.088C10.5665 16.2188 9.16735 17.618 7.69343 18.9213H7.67427C7.15677 18.9725 6.64566 19.0619 6.14093 19.1897C5.56977 19.3622 5.01393 19.5788 4.47343 19.8394C3.38093 20.3761 2.4226 21.1485 1.65977 22.1011C1.09451 22.8159 0.754296 23.6824 0.682268 24.5908C0.65855 24.8276 0.683542 25.0668 0.755705 25.2936C0.827868 25.5203 0.945675 25.7299 1.10188 25.9095C1.25808 26.089 1.44937 26.2347 1.66398 26.3375C1.87858 26.4404 2.11197 26.4982 2.34977 26.5075C3.63822 26.5673 4.91802 26.2688 6.04702 25.645C6.39074 25.4214 6.71018 25.1658 7.00535 24.8783C7.32096 24.619 7.60846 24.3315 7.86785 24.0158C8.34574 23.4728 8.7476 22.8786 9.07343 22.2333C9.36558 21.6259 9.572 20.9809 9.68677 20.3167C9.70622 20.2387 9.70964 20.1576 9.69683 20.0782C9.68402 19.9989 9.65525 19.9229 9.61224 19.855C9.56924 19.7871 9.51291 19.7286 9.44665 19.6831C9.38039 19.6376 9.30559 19.606 9.22677 19.5903C9.13858 19.5691 9.04663 19.5691 8.95843 19.5903C10.3768 18.6511 11.7951 17.6736 13.2307 16.7919C14.2517 16.1539 15.3213 15.597 16.4296 15.1263C17.613 14.6143 18.8777 14.3158 20.1652 14.2447C21.0814 14.2217 21.9918 14.3846 22.8466 14.7238ZM8.48118 20.0311C8.33168 20.5869 8.09785 21.1159 7.79118 21.6028C7.4902 22.092 7.1152 22.5317 6.67952 22.9061C6.43163 23.1323 6.16968 23.3425 5.89368 23.5367C5.62535 23.7437 5.33785 23.9226 5.03118 24.0733C4.58835 24.2544 4.12584 24.3831 3.6531 24.4567C3.36838 24.5177 3.08042 24.5625 2.7906 24.5908C2.84641 23.9558 3.109 23.3565 3.5381 22.885C4.00602 22.2521 4.57603 21.7015 5.22477 21.2558C5.65676 20.9637 6.11189 20.7073 6.5856 20.4892C7.03282 20.2822 7.49921 20.1288 7.98477 20.0292C8.15892 20.0576 8.33728 20.0163 8.48118 19.9142L8.61535 19.8203C8.61535 19.8203 8.50035 19.9353 8.48118 20.0311Z"
+                      fill="#B2B2B2"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M44.4761 30.5478C43.1727 27.8645 40.6427 25.5473 38.958 23.0767C38.2278 21.9756 37.6296 20.7926 37.1755 19.5519C36.5047 17.8461 36.0274 16.7536 35.4716 15.0305C35.2799 14.5897 34.1682 15.203 34.5132 15.7205C35.0307 17.4263 35.2607 18.3463 35.8741 20.0503C36.382 21.3881 37.0241 22.6723 37.7907 23.8817C39.1132 25.99 41.1238 27.9814 42.4444 30.1837C43.3316 31.4806 43.7384 33.0465 43.5944 34.6112C42.9619 39.5907 38.958 42.2721 34.0149 43.3838C29.7197 44.2597 25.2711 44.0354 21.0851 42.7321C18.3244 41.9787 15.7915 40.5575 13.7097 38.594C12.2587 37.0996 11.4121 35.121 11.3331 33.0395C11.3376 29.6963 12.1671 26.4058 13.7481 23.46C14.5435 21.9152 15.5363 20.4796 16.6978 19.1878C17.7911 17.8964 18.9963 16.7041 20.2992 15.6247C21.0276 14.5897 20.2992 14.4172 19.2642 14.9347C17.998 15.9901 16.8167 17.1337 15.7203 18.3655C14.458 19.7368 13.3641 21.254 12.462 22.885C10.6702 26.0041 9.68341 29.5203 9.59082 33.1162C9.62116 35.6607 10.6054 38.1012 12.3489 39.9549C14.6157 42.2123 17.4165 43.8599 20.4909 44.7446C25.0066 46.1495 29.8059 46.3795 34.4366 45.4154C40.1847 44.1121 44.6677 40.6621 45.3002 34.8201C45.4199 33.3475 45.1349 31.8702 44.4761 30.5478Z"
+                      fill="#B2B2B2"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.9386 20.2592C18.7705 20.9818 18.6869 21.7215 18.6894 22.4634C18.63 24.0499 18.884 25.6326 19.4369 27.1209C18.9172 27.8414 18.5996 28.6878 18.5169 29.5723C18.4307 30.5498 18.5955 31.5311 18.9961 32.4262C19.4178 33.3271 19.987 34.1493 20.6828 34.8604C21.1102 35.2667 21.6507 35.5331 22.2353 35.6251C22.7282 35.6669 23.2205 35.5371 23.6287 35.2577C24.037 34.9783 24.3363 34.5664 24.4758 34.0918L24.7633 32.9035C24.7825 32.6313 24.7825 32.3566 24.7633 32.0793C24.736 31.7139 24.6913 31.3499 24.6292 30.9887C24.565 30.5873 24.4754 30.1904 24.3608 29.8004C24.2238 29.4021 24.0506 29.0171 23.8433 28.6504C23.5662 28.2118 23.2309 27.8127 22.8467 27.464C22.3483 27.004 21.7925 26.6015 21.2367 26.1606C21.1408 26.0947 21.0272 26.0594 20.9108 26.0594C20.7945 26.0594 20.6809 26.0947 20.585 26.1606C20.4551 24.7798 20.5131 23.3878 20.7575 22.0226C20.93 20.9876 21.1408 19.9717 21.4092 18.9578C21.652 17.726 22.0033 16.5256 22.4633 15.3564C22.4633 14.6281 21.6967 14.7814 21.2175 15.3564C20.5467 16.1978 19.9813 17.1178 19.5328 18.0972C19.2646 18.7974 19.0656 19.5222 18.9386 20.2611M20.3186 27.9259C20.4175 27.89 20.5051 27.8285 20.5724 27.7477C20.6398 27.6669 20.6845 27.5696 20.7019 27.4659C21.0597 27.7853 21.3983 28.124 21.7178 28.4817C21.9614 28.7674 22.1675 29.083 22.3311 29.4209C22.4423 29.6918 22.5253 29.9729 22.5803 30.2642C22.616 30.5709 22.616 30.8776 22.5803 31.1842V32.6006L22.4269 33.1565C22.1969 33.5973 22.4269 33.5781 21.8711 33.1565C21.319 32.6733 20.8411 32.1114 20.4528 31.489C20.0831 30.9125 19.8595 30.2546 19.8011 29.5723C19.8337 28.9896 20.0119 28.4242 20.3186 27.9259Z"
+                      fill="#B2B2B2"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_62_53">
+                      <rect width="46" height="46" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="feature-card feature-card--gold">
+              <div
+                class="feature-card feature-card--white feature-card--rounded"
+              >
+                <h3 class="feature-title">Real Thrill</h3>
+                <p class="feature-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  malesuada porta magna, sed maximus diam pharetra non.
+                </p>
+                <div class="svg-wrapper" data-svg-wrapper>
+                  <svg
+                    width="57"
+                    height="57"
+                    viewBox="0 0 57 57"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.9004 12.3997H32.2998C32.4345 12.3996 32.5679 12.4303 32.6895 12.4885C32.8047 12.5438 32.9061 12.6233 32.9883 12.7209L39.0791 21.4709L39.6709 22.3215L40.5 21.7004L47.752 16.26C47.8382 16.3192 47.9389 16.3982 48.041 16.4963C48.1862 16.6359 48.2978 16.7776 48.3672 16.8909L47.9014 17.7053L47.5918 18.2463L47.9414 18.7629L54.2607 28.094V28.095C54.3977 28.3061 54.3852 28.4469 54.3457 28.5559C54.2936 28.6999 54.1515 28.8828 53.9023 29.0256C53.387 29.3208 52.811 29.2629 52.4609 28.8254L50.1807 25.9758L49.8809 25.5999H49.3467C48.3483 25.5999 47.8692 25.5843 47.5029 25.4358C47.2292 25.3248 46.9081 25.0867 46.4961 24.2561L45.7988 22.8508L44.8193 24.0754L37.2188 33.5754L36.7744 34.1311L37.1533 34.7327L44.5596 46.5042C44.556 46.5097 44.5544 46.5173 44.5498 46.5237C44.5259 46.5566 44.4924 46.5925 44.4512 46.6262C44.4098 46.6599 44.3671 46.6861 44.3291 46.7034C44.3261 46.7047 44.3222 46.7041 44.3193 46.7053L34.7109 37.0969L34.4424 37.0295L19.2422 33.2297L18.4639 33.0354L18.1055 33.7532C17.2765 35.411 15.5568 36.9439 13.623 38.0754C11.6775 39.2138 9.72003 39.8274 8.5498 39.8274H7.88965L7.62988 40.4348L5.47949 45.47L8.35352 36.9895C8.4022 37.0032 8.45531 37.0203 8.51562 37.0442L8.8623 37.1975C9.15866 37.3374 9.66784 37.5892 10.2393 37.6213C10.909 37.659 11.5349 37.4041 12.0957 36.8489L12.3916 36.5559L12.3926 36.1389L12.4004 30.4016V30.3997C12.4004 29.5467 12.538 28.6149 12.7236 27.802C12.9129 26.9733 13.1327 26.3497 13.2588 26.0989L13.6572 25.3059L12.917 24.8167C11.7822 24.0652 10.4634 23.9471 9.20605 24.0588C7.95598 24.1699 6.62549 24.5236 5.39941 24.8469H5.39844C4.27077 25.1452 3.23588 25.4087 2.30273 25.5325C3.78405 25.1836 5.12596 24.3481 6.26074 23.6526L6.25977 23.6516C7.71416 22.7615 8.85126 22.0932 9.9502 22.0256C10.8853 21.9682 12.0255 22.3549 13.4365 24.3313L13.9902 25.1067L14.791 24.5911C15.4774 24.1492 16.1215 23.8815 16.8115 23.8157L17.1104 23.8H25.4492L24.624 22.3147L19.874 13.7649L19.8545 13.7288L19.832 13.6956L19.6885 13.468C19.3921 12.9737 19.3586 12.7194 19.3613 12.6399C19.3614 12.6387 19.3613 12.6371 19.3613 12.636C19.3687 12.6302 19.3799 12.6229 19.3955 12.6135C19.5127 12.5432 19.7335 12.4763 20.0547 12.4377C20.3591 12.4012 20.6605 12.3997 20.9004 12.3997ZM33.6484 19.1155L23.1182 26.0706C22.789 26.276 22.5044 26.5461 22.2812 26.8635C22.0582 27.1809 21.9012 27.54 21.8193 27.9192C21.7375 28.2984 21.7324 28.6904 21.8047 29.0715C21.877 29.4526 22.0253 29.8151 22.2402 30.1379C22.4553 30.4609 22.7328 30.7377 23.0566 30.9514C23.3804 31.165 23.7436 31.3114 24.125 31.3821C24.5065 31.4528 24.8984 31.447 25.2773 31.3635C25.6562 31.2801 26.0136 31.1201 26.3301 30.8958L36.6758 23.6174L37.4727 23.0569L36.9316 22.2454L35.0322 19.3958L34.4795 18.5667L33.6484 19.1155ZM38 4.80005C38.7426 4.80005 39.4544 5.09532 39.9795 5.62036C40.5045 6.14542 40.7998 6.85732 40.7998 7.59985C40.7998 8.34246 40.5046 9.05522 39.9795 9.58032C39.4544 10.1052 38.7424 10.3997 38 10.3997C37.2576 10.3997 36.5456 10.1052 36.0205 9.58032C35.4954 9.05522 35.2002 8.34246 35.2002 7.59985C35.2002 6.85732 35.4955 6.14542 36.0205 5.62036C36.5456 5.09532 37.2574 4.80005 38 4.80005Z"
+                      stroke="#B2B2B2"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="how-it-works">
+        <div class="how-graphic">
+          <img src="assets/images/transparent-horse.png" alt="Horse graphic" />
+        </div>
+        <div class="container inner-how-it-works">
+          <div class="how-wrapper">
+            <div class="how-content">
+              <div class="how-heading">
+                <h2>HOW IT WORKS</h2>
+              </div>
+
+              <div class="how-steps mt-s">
+                <div class="how-step">
+                  <div class="svg-cluster first-graph" aria-hidden="true">
+                    <div class="svg-cluster__outline"></div>
+
+                    <div class="svg-cluster__vline">
+                      <svg
+                        width="1"
+                        height="48"
+                        viewBox="0 0 1 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M0.5 0V48" stroke="black" />
+                      </svg>
+                    </div>
+
+                    <div
+                      class="svg-cluster__circle svg-cluster__circle--topleft"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="10"
+                          cy="10"
+                          r="9"
+                          fill="black"
+                          stroke="white"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+
+                    <div
+                      class="svg-cluster__circle svg-cluster__circle--bottomright"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="10"
+                          cy="10"
+                          r="9"
+                          fill="black"
+                          stroke="white"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <h5>Simply order<br />the race</h5>
+                  <p>Order from one to six race</p>
+                </div>
+                <div class="how-step">
+                  <div
+                    class="svg-cluster svg-cluster--compact"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="svg-cluster__outline svg-cluster__outline--rotated"
+                    ></div>
+                    <div class="svg-cluster__vline" data-svg-wrapper>
+                      <svg
+                        width="1"
+                        height="28"
+                        viewBox="0 0 1 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M0.5 0V28" stroke="black" />
+                      </svg>
+                    </div>
+                    <div
+                      class="svg-cluster__circle svg-cluster__circle--topleft"
+                      data-svg-wrapper
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="10"
+                          cy="10"
+                          r="9"
+                          fill="black"
+                          stroke="white"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="svg-cluster__circle svg-cluster__circle--bottomright"
+                      data-svg-wrapper
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="10"
+                          cy="10"
+                          r="9"
+                          fill="black"
+                          stroke="white"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <h5>Submit a form</h5>
+                  <p>Video will be delivered<br />via Dropbox</p>
+                </div>
+                <div class="how-step">
+                  <div
+                    class="svg-cluster svg-cluster--rotated-90"
+                    aria-hidden="true"
+                  >
+                    <div class="svg-cluster__outline"></div>
+                    <div class="svg-cluster__vline" data-svg-wrapper>
+                      <svg
+                        width="113"
+                        height="1"
+                        viewBox="0 0 113 1"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M113 0.5H-3.8147e-06" stroke="black" />
+                      </svg>
+                    </div>
+                    <div
+                      class="svg-cluster__circle svg-cluster__circle--topleft"
+                      data-svg-wrapper
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="10"
+                          cy="10"
+                          r="9"
+                          fill="black"
+                          stroke="white"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="svg-cluster__circle svg-cluster__circle--bottomright"
+                      data-svg-wrapper
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="10"
+                          cy="10"
+                          r="9"
+                          fill="black"
+                          stroke="white"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <h5>Create a 'Virtual<br />Sportsbook'</h5>
+                  <p>You have to create this for<br />your guests</p>
+                </div>
+                <div class="how-step">
+                  <h5>Guests will login<br />with QR code</h5>
+                  <p>Guests will place their wagers<br />after login</p>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="cta">
+              <span class="text">Know Details</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="21"
+                viewBox="0 0 30 21"
+                fill="none"
+              >
+                <path
+                  d="M29.4609 3.6314C29.6062 3.09858 29.292 2.54884 28.7592 2.40352L20.0763 0.0354659C19.5435 -0.10985 18.9938 0.204288 18.8485 0.737112C18.7031 1.26994 19.0173 1.81968 19.5501 1.96499L27.2682 4.06993L25.1633 11.788C25.018 12.3209 25.3321 12.8706 25.8649 13.0159C26.3977 13.1612 26.9475 12.8471 27.0928 12.3143L29.4609 3.6314ZM0.496094 19.3683L0.992233 20.2365L28.9922 4.23653L28.4961 3.36829L28 2.50004L-4.51803e-05 18.5L0.496094 19.3683Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section
+        class="call-to-action py-xxl"
+        style="
+          background: url('assets/images/cta-background.jpg') no-repeat center
+            center/cover;
+        "
+      >
+        <div class="container inner-cta">
+          <div class="content">
+            <h2 class="title">
+              Come and Join Us to Make Your Party Memorable to Your Guests
+            </h2>
+            <a href="#" class="cta white-cta">
+              <span class="text">Sign Up</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="21"
+                viewBox="0 0 30 21"
+                fill="none"
+              >
+                <path
+                  d="M29.4609 3.63153C29.6062 3.0987 29.292 2.54896 28.7592 2.40364L20.0763 0.035588C19.5435 -0.109728 18.9938 0.20441 18.8485 0.737234C18.7031 1.27006 19.0173 1.8198 19.5501 1.96512L27.2682 4.07005L25.1633 11.7882C25.018 12.321 25.3321 12.8707 25.8649 13.016C26.3977 13.1614 26.9475 12.8472 27.0928 12.3144L29.4609 3.63153ZM0.496094 19.3684L0.992233 20.2367L28.9922 4.23665L28.4961 3.36841L28 2.50017L-4.51803e-05 18.5002L0.496094 19.3684Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="what-we-offer py-xl">
+        <div class="offer-horse">
+          <img src="assets/images/offer-horse.png" alt="Offer Horse" />
+        </div>
+        <div class="container">
+          <div class="how-heading">
+            <h2>WHAT WE OFFER</h2>
+          </div>
+          <div class="offer-steps-wrapper mt-l">
+            <div class="offer-steps">
+              <div class="offer-step">
+                <h3 class="number">1</h3>
+                <p class="large-text">
+                  Simple Pricing Based on Number of Races and Number of
+                  Participants
+                </p>
+              </div>
+              <div class="offer-step">
+                <h3 class="number">2</h3>
+                <p class="large-text">High-quality Video Races</p>
+              </div>
+              <div class="offer-step">
+                <h3 class="number">3</h3>
+                <p class="large-text">Computers & Sound system</p>
+              </div>
+              <div class="offer-step">
+                <h3 class="number">4</h3>
+                <p class="large-text">Projectors and Televisions</p>
+              </div>
+              <div class="offer-step">
+                <h3 class="number">5</h3>
+                <p class="large-text">Betting Slips and Office Racing Forms</p>
+              </div>
+              <div class="offer-step">
+                <h3 class="number">6</h3>
+                <p class="large-text">Professional Race Announcer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-horse">
+          <img src="assets/images/footer-horse.png" alt="Footer Horse" />
+        </div>
+        <div class="footer-menu">
+          <div class="footer-logo">
+            <a href="index.html">
+              <img src="assets/images/logo.png" alt="Footer Logo"
+            /></a>
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="about.html">ABOUT</a></li> -->
+            <li><a href="how-it-works.html">HOW IT WORKS</a></li>
+            <li><a href="vendor-signup.html">SIGN UP</a></li>
+            <li><a href="vendor-login.html">VENDOR LOGIN</a></li>
+          </ul>
+        </div>
+        <p class="copyright">© 2025 DerbyKight</p>
+      </div>
+    </footer>
+  </body>
+  <script src="assets/js/script.js"></script>
+</html>
